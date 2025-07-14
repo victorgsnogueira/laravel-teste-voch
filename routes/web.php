@@ -23,4 +23,8 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
+Route::middleware(['auth'])->group(function () {
+    Route::view('/grupos-economicos', 'grupos-economicos')->name('grupos-economicos');
+});
+
 require __DIR__.'/auth.php';
