@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Força a cor do texto do dropdown do WireUI select no dark mode e tema claro */
+.dark .dark\:bg-secondary-800,
+.dark .dark\:bg-secondary-800 * {
+    color: #f3f4f6 !important; /* text-gray-100 no dark */
+}
+.dark .dark\:text-secondary-400,
+.dark .dark\:text-secondary-400 * {
+    color: #f3f4f6 !important; /* text-gray-100 no dark */
+}
+
+/* Tema claro: texto escuro */
+.bg-white,
+.bg-white * {
+    color: #111827 !important; /* text-gray-900 no light */
+}
+.bg-white .bg-blue-600,
+.bg-white .bg-blue-600 *,
+.bg-blue-600,
+.bg-blue-600 * {
+    color: #fff !important;
+}

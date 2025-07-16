@@ -1,0 +1,2 @@
+<input <?php echo e($attributes->merge(['type' => 'hidden'])); ?> />
+<?php /**PATH C:\Users\vgdsn\OneDrive\Área de Trabalho\Projeto-Vaga-Voch-main\Projeto-Vaga-Voch-main\vendor\wireui\wireui\src/Components/Wrapper/views/components/hidden.blade.php ENDPATH**/ ?>
